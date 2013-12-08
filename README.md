@@ -1,3 +1,5 @@
-# rails-hartl
+# Ruby on Rails Tutorial: sample application
 
-This application is a version of Michael Hartl's demo_app from the [RailsTutorial website](http://ruby.railstutorial.org/).
+This is the sample application for
+the [*Ruby on Rails Tutorial*](http://railstutorial.org/)
+by [Michael Hartl](http://michaelhartl.com/).
