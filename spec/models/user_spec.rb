@@ -2,7 +2,11 @@ require 'spec_helper'
 
 describe User do
 
-  before do @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation: "foobar")
+  before do
+    @user = User.new(
+      name: "Example User", email: "user@example.com", 
+      password: "foobar", password_confirmation: "foobar"
+    )
   end
 
   subject { @user }
@@ -15,6 +19,7 @@ describe User do
   it { should respond_to(:remember_token) }
   it { should respond_to(:authenticate) }
   it { should respond_to(:admin) }
+  it { should respond_to(:microposts) }
 
   it { should be_valid }
   it { should_not be_admin }

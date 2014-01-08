@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_many :microposts
+  
   before_create :create_remember_token
 
   before_save { self.email = email.downcase }
