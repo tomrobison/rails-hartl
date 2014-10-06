@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.1.2'
 #ruby-gemset=railstutorial_rails_4_0
+
+gem 'unicorn'
 
 gem 'rails', '4.0.2'
 gem 'bootstrap-sass', '2.3.2.0'
@@ -22,13 +24,13 @@ group :development, :test do
 
   # Spork
   gem 'childprocess', '0.3.6'
-  gem 'guard-spork', '1.5.0'  
+  gem 'guard-spork', '1.5.0'
   gem 'spork-rails', '4.0.0'
 end
 
 group :test do
   gem 'factory_girl_rails', '4.2.1'
-  gem 'database_cleaner', github: 'bmabey/database_cleaner'
+  gem 'database_cleaner', git: 'https://github.com/bmabey/database_cleaner'
 
   gem 'cucumber-rails', '1.4.0', :require => false
   gem 'selenium-webdriver', '2.35.1'
@@ -53,4 +55,5 @@ end
 group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
+  gem 'mysql'
 end
