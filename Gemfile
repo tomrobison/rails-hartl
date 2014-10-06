@@ -37,10 +37,10 @@ group :test do
   gem 'capybara', '2.1.0'
 
   # Guard Notifier for OS X.
-  # gem 'growl', '1.0.3'
+  gem 'growl', '1.0.3'
 
   # Guard Notifier for Linux.
-  gem 'libnotify', '0.8.0'
+  # gem 'libnotify', '0.8.0'
 
   # Guard Notifier for Windows.
   # gem 'rb-notifu', '0.0.4'
@@ -53,7 +53,6 @@ group :doc do
 end
 
 group :production do
-  gem 'pg', '0.15.1'
+  gem 'pg', '0.17.1'
   gem 'rails_12factor', '0.0.2'
-  gem 'mysql'
 end
