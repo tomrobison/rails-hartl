@@ -40,7 +40,7 @@ do_build() {
   export GEM_HOME=${pkg_prefix}/vendor/bundle
   export GEM_PATH=${_bundler_dir}:${GEM_HOME}
 
-   bundle config build.sqlite3 --with-sqlite3-dir="${_sqlite_dir}"
+  bundle config build.sqlite3 --with-sqlite3-dir="${_sqlite_dir}"
 
   # The mytutorialapp source code is in a relative directory, so you must copy the
   # contents of the source directory into your $HAB_CACHE_SRC_PATH/$pkg_dirname as this 
